@@ -1,0 +1,94 @@
+
+/* ==== HEADER ==== */
+header {
+  background-color: whitesmoke ;
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 5px solid black; /* contoh box model - border */
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+/* ==== BUTTON ==== */
+.btn {
+  background-color: black;
+  color: whitesmoke;
+  padding: 10px 25px; /* contoh box model - padding */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: black; /* efek hover */
+  transform: scale(1.05);
+}
+
+/* ==== FLEXBOX LAYOUT ==== */
+.container {
+  display: flex; /* Flexbox aktif */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 30px; /* contoh box model - margin */
+}
+
+/* ==== KONTEN UTAMA ==== */
+.main-content {
+  flex: 3;
+  background-color: grey;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px black;
+  text-align: justify;
+}
+
+/* ==== SIDEBAR ==== */
+.sidebar {
+  flex: 1;
+  background-color: grey;
+  padding: 20px;
+  border-left: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px black;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.sidebar li:hover {
+  color: black; /* efek hover */
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background-color: grey;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-top: 5px solid black;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
